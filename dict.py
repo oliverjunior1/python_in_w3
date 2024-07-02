@@ -1,11 +1,11 @@
-thisdict = {
-    'brand': 'Ford',
-    'model': 'Mustang',
-    'year': 1964,
-    'color': 'white'
+# thisdict = {
+#     'brand': 'Ford',
+#     'model': 'Mustang',
+#     'year': 1964,
+#     'color': 'white'
 #     # 'year': 2020,
 #     # 'color': ['red', 'white', 'blue']
-}
+# }
 # # print(thisdict)
 # # # print(thisdict['brand'])
 # # print(len(thisdict))
@@ -18,7 +18,15 @@ thisdict = {
 # x = thisdict.keys()
 # print(x)
 
-x = thisdict.keys()
-print(x)
-thisdict['color'] = 'white'
+# x = thisdict.keys()
+# print(x)
+# thisdict['color'] = 'white'
+# print(thisdict)
+
+thisdict = {
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
+}
+thisdict['year'] = 2018
 print(thisdict)
