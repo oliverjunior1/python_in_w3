@@ -26,13 +26,43 @@
 
 ######################################################
 
-class completeName:
+# class completeName:
+#     def __init__(self, fname, lname):
+#         self.fname = fname
+#         self.lname = lname
+
+#     def print_name(self):
+#         print(self.fname + self.lname)
+
+# class Student(completeName):
+#     def __init__(self, fname, lname):
+#         super().__init__(fname, lname)
+#         self.graduationyear = 2019
+
+# x = Student('Joaquim ', 'Rodrigues')
+# x.print_name()
+# print(x.graduationyear)
+
+######################################################
+
+class Person:
     def __init__(self, fname, lname):
         self.fname = fname
         self.lname = lname
 
-    def print_name(self):
+    def completeName(self):
         print(self.fname + self.lname)
 
-x = completeName('Joaquim', ' Rodrigues')
-x.print_name()
+class Student(Person):
+    def __init__(self, fname, lname, year):
+        super().__init__(fname, lname)
+        self.graduation = year
+
+x = Student('Joaquim ', 'Rodrigues', 2019)
+x.completeName()
+print(x.graduation)
+
+
+
+######################################################
+######################################################
