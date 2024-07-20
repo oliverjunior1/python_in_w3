@@ -44,3 +44,4 @@ for simplex in hull_points:
     plt.plot(points[simplex,0], points[simplex, 1],'k-')
 
 plt.show()
+
